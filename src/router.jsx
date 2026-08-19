@@ -1,19 +1,19 @@
 import { createBrowserRouter } from "react-router";
-import Home from "./pages/Home";
 import MainLayout from "./Layouts/MainLayout";
-import Products from "./pages/Products";
-import ProductDetail from "./pages/ProductDetail";
-import Error from "./pages/Error";
-import Categories from "./pages/Categories";
-import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
-import OrderSuccess from "./pages/OrderSuccess";
-import OrderDetail from "./pages/OrderDetail";
-import Orders from "./pages/Orders";
-import WishList from "./pages/WishList";
-import Dashboard from "./pages/Dashboard";
 import DashboardLayout from "./Layouts/DashboardLayout";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/Home/Home";
+import Products from "./pages/Products/Products";
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import Error from "./pages/Error/Error";
+import Categories from "./pages/Categories/Categories";
+import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
+import OrderSuccess from "./pages/OrderSuccess/OrderSuccess";
+import OrderDetail from "./pages/OrderDetail/OrderDetail";
+import Orders from "./pages/Orders/Orders";
+import WishList from "./pages/WishList/WishList";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import NotFound from "./pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
