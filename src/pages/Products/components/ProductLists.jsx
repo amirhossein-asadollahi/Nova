@@ -1,13 +1,29 @@
 import React from "react";
-import SectionTitle from "../../components/common/SectionTitle";
-import { Heart } from "lucide-react";
-import ProductCard from "../../components/common/ProductCard";
+import SectionTitle from "../../../components/common/SectionTitle";
+import ProductCard from "../../../components/common/ProductCard";
+import { Store } from "lucide-react";
+import Pagination from "../../../components/common/Pagination";
 
-const WishList = () => {
+const ProductLists = () => {
   return (
-    <div>
-      <SectionTitle icon={<Heart />} title={"لیست علاقه مندی ها"} />
-      <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 mt-4 gap-2">
+    <div className="flex-4">
+      <div className="">
+        <SectionTitle title="همه محصولات" icon={<Store />} />
+      </div>
+      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+        <ProductCard
+          title={"لپ تاپ ایسوس 2024"}
+          rate={"4.5"}
+          price={"23000000"}
+          off={30}
+          image={"images/product1.png"}
+        />
+        <ProductCard
+          title={"ایرپاد پرو سفید شرکت اپل"}
+          rate={"4.5"}
+          price={"36000000"}
+          image={"images/product2.png"}
+        />
         <ProductCard
           title={"لپ تاپ ایسوس 2024"}
           rate={"4.5"}
@@ -48,8 +64,11 @@ const WishList = () => {
           image={"images/product2.png"}
         />
       </div>
+      <div className="flex items-center justify-center my-8">
+        <Pagination totalPage={4} />
+      </div>
     </div>
   );
 };
 
-export default WishList;
+export default ProductLists;
