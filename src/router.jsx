@@ -12,8 +12,8 @@ import OrderSuccess from "./pages/OrderSuccess/OrderSuccess";
 import OrderDetail from "./pages/OrderDetail/OrderDetail";
 import Orders from "./pages/Orders/Orders";
 import WishList from "./pages/WishList/WishList";
-import Dashboard from "./pages/Dashboard/Dashboard";
 import NotFound from "./pages/NotFound/NotFound";
+import Dashboard from "./pages/Admin/Dashboard/Dashboard";
 
 export const router = createBrowserRouter([
   {
@@ -32,12 +32,11 @@ export const router = createBrowserRouter([
       { path: "order-detail", Component: OrderDetail },
       { path: "wishlist", Component: WishList },
       { path: "*", Component: NotFound },
-
-      {
-        path: "dashboard",
-        Component: DashboardLayout,
-        children: [{ index: true, Component: Dashboard }],
-      },
     ],
+  },
+  {
+    path: "dashboard",
+    Component: DashboardLayout,
+    children: [{ index: true, Component: Dashboard }],
   },
 ]);
