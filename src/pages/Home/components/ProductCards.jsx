@@ -1,18 +1,18 @@
 import React from "react";
 import ProductCard from "../../../components/common/ProductCard";
-import NavigateHeader from "./NavigateHeader";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
+import NavigateHeader from "../../../components/common/NavigateHeader";
 
-const ProductCards = ({title}) => {
+const ProductCards = ({ title, autopPlay = true }) => {
   return (
     <>
       <div className="mt-8">
         <NavigateHeader value={title} />
 
         <Swiper
-          modules={[Autoplay]}
+          modules={autopPlay && [Autoplay]}
           spaceBetween={20}
           slidesPerView={1.3}
           breakpoints={{
@@ -36,7 +36,7 @@ const ProductCards = ({title}) => {
               rate={"4.5"}
               price={"23000000"}
               off={30}
-              image={"images/product1.png"}
+              image={"/images/product1.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -44,7 +44,7 @@ const ProductCards = ({title}) => {
               title={"ایرپاد پرو سفید شرکت اپل"}
               rate={"4.5"}
               price={"36000000"}
-              image={"images/product2.png"}
+              image={"/images/product2.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -53,7 +53,7 @@ const ProductCards = ({title}) => {
               rate={"4.5"}
               price={"23000000"}
               off={30}
-              image={"images/product1.png"}
+              image={"/images/product1.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -61,7 +61,7 @@ const ProductCards = ({title}) => {
               title={"ایرپاد پرو سفید شرکت اپل"}
               rate={"4.5"}
               price={"36000000"}
-              image={"images/product2.png"}
+              image={"/images/product2.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -70,7 +70,7 @@ const ProductCards = ({title}) => {
               rate={"4.5"}
               price={"23000000"}
               off={30}
-              image={"images/product1.png"}
+              image={"/images/product1.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -78,7 +78,7 @@ const ProductCards = ({title}) => {
               title={"ایرپاد پرو سفید شرکت اپل"}
               rate={"4.5"}
               price={"36000000"}
-              image={"images/product2.png"}
+              image={"/images/product2.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -86,7 +86,7 @@ const ProductCards = ({title}) => {
               title={"ایرپاد پرو سفید شرکت اپل"}
               rate={"4.5"}
               price={"36000000"}
-              image={"images/product2.png"}
+              image={"/images/product2.png"}
             />
           </SwiperSlide>
           <SwiperSlide className="mt-4">
@@ -95,7 +95,7 @@ const ProductCards = ({title}) => {
               rate={"4.5"}
               price={"23000000"}
               off={30}
-              image={"images/product1.png"}
+              image={"/images/product1.png"}
             />
           </SwiperSlide>
         </Swiper>

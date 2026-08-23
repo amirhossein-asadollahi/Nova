@@ -1,7 +1,7 @@
 import React from "react";
 import CategoryBox from "../../../components/layout/CtaegoryBox/CategoryBox";
 import { Smartphone } from "lucide-react";
-import NavigateHeader from "./NavigateHeader";
+import NavigateHeader from "../../../components/common/NavigateHeader";
 
 const CategoryBoxes = () => {
   return (
