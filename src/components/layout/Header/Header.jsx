@@ -14,9 +14,9 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white sticky top-0 z-50 px-4 py-6 mt-6">
+      <header className="bg-white sticky top-0 z-50 px-4 py-6">
         {/* Desktop */}
-        <div className="hidden lg:flex lg:justify-between lg:items-center lg:gap-6">
+        <div className="hidden lg:flex lg:justify-between lg:items-center lg:gap-6 lg:border-b-2 lg:border-border py-2">
           <Logo />
 
           <div className="flex items-center justify-center gap-12 flex-4">

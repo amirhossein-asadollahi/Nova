@@ -2,6 +2,7 @@ import { Heart, ShoppingCart, User } from "lucide-react";
 import React from "react";
 import Badge from "../../../ui/Badge";
 import { useNavigate } from "react-router";
+import Button from "../../../common/Button";
 
 const UsefullButtons = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const UsefullButtons = () => {
           bgColor={"bg-primary"}
           position={"absolute -top-1.5 left-5"}
         />
-        <ShoppingCart className="w-8 h-8 hover:text-primary cursor-pointer top-2 right-2" />
+        <ShoppingCart onClick={() => navigate("/cart")} className="w-8 h-8 hover:text-primary cursor-pointer top-2 right-2" />
       </div>
       <div className="relative">
         <Badge

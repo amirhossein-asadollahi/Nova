@@ -19,7 +19,7 @@ const Slider = () => {
         pagination={{ clickable: true }}
         navigation
         dir="rtl"
-        className="mt-8 w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] rounded-2xl"
+        className="mt-8 w-full h-55 sm:h-75 md:h-100 lg:h-112.5 rounded-2xl"
       >
         <SwiperSlide className="relative">
           <Badge
@@ -34,7 +34,7 @@ const Slider = () => {
           />
           <Button
             value={"مشاهده محصولات"}
-            bgColor={"bg-primary"}
+            className={"bg-primary"}
             icon={<MoveLeft />}
           />
         </SwiperSlide>
@@ -51,7 +51,7 @@ const Slider = () => {
           />
           <Button
             value={"مشاهده محصولات"}
-            bgColor={"bg-primary"}
+            className={"bg-primary"}
             icon={<MoveLeft />}
           />
         </SwiperSlide>
@@ -68,7 +68,7 @@ const Slider = () => {
           />
           <Button
             value={"مشاهده محصولات"}
-            bgColor={"bg-primary"}
+            className={"bg-primary"}
             icon={<MoveLeft />}
           />
         </SwiperSlide>

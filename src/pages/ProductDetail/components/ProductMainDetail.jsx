@@ -1,5 +1,6 @@
 import { ShoppingCart, Star, Zap } from "lucide-react";
 import React from "react";
+import ProductCount from "../../../components/common/ProductCount";
 
 const ProductMainDetail = () => {
   return (
@@ -47,23 +48,7 @@ const ProductMainDetail = () => {
               <div className="bg-sky-800 w-8 h-8 rounded-full cursor-pointer"></div>
             </div>
           </div>
-          <div className="flex flex-col items-start space-y-2">
-            <span>تعداد:</span>
-            <div className="flex items-center px-2 py-1 border-2 border-border rounded-lg">
-              <button className="border-l-2 rounded-lg border-border w-8 h-8 cursor-pointer hover:bg-slate-200">
-                +
-              </button>
-              <input
-                className="w-12 text-center outline-none"
-                type="text"
-                max={5}
-                value={1}
-              />
-              <button className="border-r-2 rounded-lg border-border w-8 h-8 cursor-pointer hover:bg-slate-200">
-                -
-              </button>
-            </div>
-          </div>
+          <ProductCount />
         </div>
         <div className="flex flex-col space-y-2 my-4">
           <button className="w-full cursor-pointer flex items-center justify-center px-4 py-3 rounded-lg text-white bg-primary hover:bg-primary-dark">
