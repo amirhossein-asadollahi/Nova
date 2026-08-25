@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "../../components/common/SectionTitle";
 import { ShoppingCart } from "lucide-react";
 import CartProductCard from "./components/CartProductCard";
-import OrderSummary from "./components/OrderSummary";
+import OrderSummary from "../../components/common/OrderSummary";
 
 const Cart = () => {
   return (
@@ -39,8 +39,13 @@ const Cart = () => {
             price={"23,860,000"}
           />
         </div>
-        <div className="w-full h-120 border-2 border-border rounded-lg shadow-lg flex flex-col justify-between flex-1 px-8 py-4 bg-bg-secondary">
-          <OrderSummary totalPrice={"22,200,000"} deliveryTax={"120,000"} />
+        <div className="flex-1">
+          <OrderSummary
+            btnText={"ادامه جهت تصویه حساب"}
+            totalPrice={"22,200,000"}
+            deliveryTax={"120,000"}
+            hasDiscount={true}
+          />
         </div>
       </div>
     </div>
