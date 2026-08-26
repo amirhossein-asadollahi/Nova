@@ -10,7 +10,7 @@ const SectionTitle = ({
 }) => {
   // const [show,setShow] = useState("GRID")
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between my-4">
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-4">
           {<SectionIcon icon={icon} />}

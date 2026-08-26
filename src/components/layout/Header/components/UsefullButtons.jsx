@@ -14,7 +14,10 @@ const UsefullButtons = () => {
           bgColor={"bg-primary"}
           position={"absolute -top-1.5 left-5"}
         />
-        <ShoppingCart onClick={() => navigate("/cart")} className="w-8 h-8 hover:text-primary cursor-pointer top-2 right-2" />
+        <ShoppingCart
+          onClick={() => navigate("/cart")}
+          className="w-8 h-8 hover:text-primary cursor-pointer top-2 right-2"
+        />
       </div>
       <div className="relative">
         <Badge
@@ -27,7 +30,10 @@ const UsefullButtons = () => {
           onClick={() => navigate("/wishlist")}
         />
       </div>
-      <User className="w-8 h-8 hover:text-primary cursor-pointer" />
+      <User
+        className="w-8 h-8 hover:text-primary cursor-pointer"
+        onClick={() => navigate("/dashboard")}
+      />
     </div>
   );
 };

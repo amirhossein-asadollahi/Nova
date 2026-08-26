@@ -14,6 +14,7 @@ import Orders from "./pages/Orders/Orders";
 import WishList from "./pages/WishList/WishList";
 import NotFound from "./pages/NotFound/NotFound";
 import Dashboard from "./pages/Admin/Dashboard/Dashboard";
+import DashboardProducts from "./pages/Admin/Products/DashboardProducts";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,9 @@ export const router = createBrowserRouter([
   {
     path: "dashboard",
     Component: DashboardLayout,
-    children: [{ index: true, Component: Dashboard }],
+    children: [
+      { index: true, Component: Dashboard },
+      { path: "products", Component: DashboardProducts },
+    ],
   },
 ]);

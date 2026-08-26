@@ -8,7 +8,7 @@ const DashboardLayout = () => {
     <>
       <Toaster position="top-center" />
       <DashboardSidebar />
-      <main className="bg-bg-secondary min-h-screen w-5/6 left-0 top-0 fixed p-4">
+      <main className="bg-bg-secondary max-h-screen overflow-auto w-5/6 left-0 top-0 fixed p-4">
         <Outlet />
       </main>
     </>
