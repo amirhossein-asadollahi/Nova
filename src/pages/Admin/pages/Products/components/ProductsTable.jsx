@@ -1,6 +1,6 @@
 import React from "react";
 import ProductItem from "./ProductItem";
-import Pagination from "../../../../components/common/Pagination";
+import Pagination from "../../../../../components/common/Pagination";
 
 const ProductsTable = () => {
   return (

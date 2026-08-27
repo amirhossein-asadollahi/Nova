@@ -13,8 +13,11 @@ import OrderDetail from "./pages/OrderDetail/OrderDetail";
 import Orders from "./pages/Orders/Orders";
 import WishList from "./pages/WishList/WishList";
 import NotFound from "./pages/NotFound/NotFound";
-import Dashboard from "./pages/Admin/Dashboard/Dashboard";
-import DashboardProducts from "./pages/Admin/Products/DashboardProducts";
+import Dashboard from "./pages/Admin/pages/Dashboard/Dashboard";
+import DashboardProducts from "./pages/Admin/pages/Products/DashboardProducts";
+import AddProduct from "./pages/Admin/pages/AddProduct/AddProduct";
+import DashboardOrders from "./pages/Admin/pages/Orders/DashboardOrders";
+import DashboardCategories from "./pages/Admin/pages/Categories/DashboardCategories";
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +44,9 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: Dashboard },
       { path: "products", Component: DashboardProducts },
+      { path: "add-product", Component: AddProduct },
+      { path: "orders", Component: DashboardOrders },
+      { path: "categories", Component: DashboardCategories },
     ],
   },
 ]);

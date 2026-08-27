@@ -5,7 +5,7 @@ const InputLabel = ({
   title,
   placeholder,
   type = "text",
-  provinces = ["تهران", "اصفهان", "شیراز"],
+  options = ["تهران", "اصفهان", "شیراز"],
 }) => {
   return (
     <>
@@ -22,7 +22,7 @@ const InputLabel = ({
           />
         ) : (
           <select className="w-full mt-1 border-2 border-border outline-none rounded-lg px-4 py-2 focus:border-primary">
-            {provinces.map((province) => {
+            {options.map((province) => {
               return <option key={province}>{province}</option>;
             })}
           </select>

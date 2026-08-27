@@ -20,7 +20,7 @@ const ProductsSubMenu = ({ isSubProductShow }) => {
         <span className="">همه محصولات</span>
       </NavLink>
       <NavLink
-        to={"/dashboard/addProduct"}
+        to={"/dashboard/add-Product"}
         className={({ isActive }) =>
           `flex items-center w-full gap-2 p-3 rounded-b-lg hover:bg-primary-100 hover:text-primary-dark ${isActive ? "bg-primary-100 text-primary-dark" : null}`
         }

@@ -1,9 +1,9 @@
 import React from "react";
-import DashboardCardBox from "../components/common/DashboardCardBox";
 import { Box, Boxes, EyeOff, Tag } from "lucide-react";
 import ProductPageActions from "./components/ProductPageActions";
-import SectionTitle from "../../../components/common/SectionTitle";
 import ProductsTable from "./components/ProductsTable";
+import DashboardCardBox from "../../components/common/DashboardCardBox";
+import SectionTitle from "../../../../components/common/SectionTitle";
 
 const DashboardProducts = () => {
   return (
