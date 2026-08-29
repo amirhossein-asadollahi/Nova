@@ -14,9 +14,6 @@ const ProductItem = ({
 }) => {
   return (
     <tr className="hover:bg-slate-100">
-      <td>
-        <input type="checkbox" />
-      </td>
       <td className="flex items-center gap-2">
         <div className="w-24 h-16 p-2 border border-border rounded-lg">
           <img src={img} className="w-full h-full object-cover" alt={title} />
