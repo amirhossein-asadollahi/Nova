@@ -5,7 +5,7 @@ import Pagination from "../../../../../components/common/Pagination";
 const BrandsTable = () => {
   return (
     <>
-      <table className="border-separate table-auto bg-white w-full px-4 py-2 border-2 border-border rounded-lg">
+      <table className="border-separate border-spacing-y-4 table-auto bg-white w-full px-4 py-2 border-2 border-border rounded-lg">
         <thead>
           <tr>
             <th className="text-right pr-8">برند</th>

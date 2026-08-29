@@ -5,14 +5,23 @@ import { NavLink } from "react-router";
 const Pagination = ({ totalPage }) => {
   const pages = Array.from({ length: totalPage }, (_, index) => index + 1);
   const [currentPage, setCurrentPage] = useState(1);
+  // const previousPageHandler = () => {
+  //   if(currentPage === 1) return
+
+  // }
   return (
     <div className="flex items-center gap-4">
-      <button
-        onClick={() => setCurrentPage((prev) => prev - 1)}
-        className="w-8 h-8 bg-primary-100 cursor-pointer hover:bg-primary-200 rounded-lg"
-      >
-        <ChevronRight className="flex items-center justify-center" size={30} />
-      </button>
+      {currentPage !== 1 && (
+        <button
+          onClick={() => setCurrentPage((prev) => prev - 1)}
+          className={`w-8 h-8 bg-primary-100 hover:bg-primary-200 rounded-lg cursor-pointer`}
+        >
+          <ChevronRight
+            className="flex items-center justify-center"
+            size={30}
+          />
+        </button>
+      )}
       {pages.map((page) => {
         return (
           <button
@@ -24,12 +33,14 @@ const Pagination = ({ totalPage }) => {
           </button>
         );
       })}
-      <button
-        onClick={() => setCurrentPage((prev) => prev + 1)}
-        className="w-8 h-8 bg-primary-100 cursor-pointer hover:bg-primary-200 rounded-lg"
-      >
-        <ChevronLeft className="flex items-center justify-center" size={30} />
-      </button>
+      {currentPage !== totalPage && (
+        <button
+          onClick={() => setCurrentPage((prev) => prev + 1)}
+          className="w-8 h-8 bg-primary-100 cursor-pointer hover:bg-primary-200 rounded-lg"
+        >
+          <ChevronLeft className="flex items-center justify-center" size={30} />
+        </button>
+      )}
     </div>
   );
 };

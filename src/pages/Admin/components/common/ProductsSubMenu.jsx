@@ -38,7 +38,7 @@ const ProductsSubMenu = ({ isSubProductShow }) => {
         <span>برندها</span>
       </NavLink>
       <NavLink
-        to={"/dashboard/productFeatures"}
+        to={"/dashboard/product-attributes"}
         className={({ isActive }) =>
           `flex items-center w-full gap-2 p-3 rounded-b-lg hover:bg-primary-100 hover:text-primary-dark ${isActive ? "bg-primary-100 text-primary-dark" : null}`
         }

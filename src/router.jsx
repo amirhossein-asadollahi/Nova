@@ -19,6 +19,7 @@ import AddProduct from "./pages/Admin/pages/AddProduct/AddProduct";
 import DashboardOrders from "./pages/Admin/pages/Orders/DashboardOrders";
 import DashboardCategories from "./pages/Admin/pages/Categories/DashboardCategories";
 import Brands from "./pages/Admin/pages/Brands/Brands";
+import DashboardProductAttributes from "./pages/Admin/pages/ProductAttributes/DashboardProductAttributes";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,7 @@ export const router = createBrowserRouter([
       { path: "orders", Component: DashboardOrders },
       { path: "categories", Component: DashboardCategories },
       { path: "brands", Component: Brands },
+      { path: "product-attributes", Component: DashboardProductAttributes },
     ],
   },
 ]);
