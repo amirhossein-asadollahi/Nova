@@ -11,9 +11,7 @@ const convertToPersianNumber = (number, isCurrency = false) => {
     return persianNumbers[findEnglish];
   });
   const convertedValue = convertedChars.join("");
-  const convertedCurrency = Number(convertedChars.join("")).toLocaleString(
-    "fa-IR",
-  );
+  const convertedCurrency = convertedValue.toLocaleString("fa-IR");
   return isCurrency ? convertedCurrency : convertedValue;
 };
 
