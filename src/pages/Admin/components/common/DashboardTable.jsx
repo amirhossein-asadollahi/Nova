@@ -5,7 +5,7 @@ const DashboardTable = ({ tHeads, tBodies }) => {
   return (
     <>
       <div className="bg-white w-full px-4 py-2 border-2 border-border rounded-lg">
-        <table className="border-separate border-spacing-y-4 table-auto w-full">
+        <table className="border-separate table-auto border-spacing-y-4 w-full">
           <thead>
             <tr>
               {tHeads.map((head) => {

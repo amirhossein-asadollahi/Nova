@@ -88,7 +88,7 @@ const DashboardProducts = () => {
   return (
     <>
       <SectionTitle title={"محصولات"} icon={<Box />} />
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center gap-4">
         <DashboardCardBox
           title={"تخفیف دار"}
           value={"324"}
