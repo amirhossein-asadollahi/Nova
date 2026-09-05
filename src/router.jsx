@@ -23,6 +23,7 @@ import DashboardProductAttributes from "./pages/Admin/pages/ProductAttributes/Da
 import DashboardUsers from "./pages/Admin/pages/Users/DashboardUsers";
 import Coupons from "./pages/Admin/pages/Coupons/Coupons";
 import DashboardComments from "./pages/Admin/pages/Comments/DashboardComments";
+import Reports from "./pages/Admin/pages/Reports/Reports";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +58,7 @@ export const router = createBrowserRouter([
       { path: "users", Component: DashboardUsers },
       { path: "coupons", Component: Coupons },
       { path: "comments", Component: DashboardComments },
+      { path: "reports", Component: Reports },
     ],
   },
 ]);
