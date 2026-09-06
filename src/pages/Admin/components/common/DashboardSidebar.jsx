@@ -111,15 +111,6 @@ const DashboardSidebar = () => {
           <span>نظرات</span>
         </NavLink>
         <NavLink
-          to={"/dashboard/content"}
-          className={({ isActive }) =>
-            `flex items-center gap-4 w-full hover:bg-primary-200 hover:text-primary-dark p-4 rounded-lg ${isActive ? "bg-primary-200 text-primary-dark" : null}`
-          }
-        >
-          <ScrollText />
-          <span>محتوا</span>
-        </NavLink>
-        <NavLink
           to={"/dashboard/settings"}
           className={({ isActive }) =>
             `flex items-center gap-4 w-full hover:bg-primary-200 hover:text-primary-dark p-4 rounded-lg ${isActive ? "bg-primary-200 text-primary-dark" : null}`
