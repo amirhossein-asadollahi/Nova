@@ -24,6 +24,8 @@ import DashboardUsers from "./pages/Admin/pages/Users/DashboardUsers";
 import Coupons from "./pages/Admin/pages/Coupons/Coupons";
 import DashboardComments from "./pages/Admin/pages/Comments/DashboardComments";
 import Reports from "./pages/Admin/pages/Reports/Reports";
+import LoginLayout from "./Layouts/LoginLayout";
+import Login from "./pages/Login/Login";
 
 export const router = createBrowserRouter([
   {
@@ -61,4 +63,12 @@ export const router = createBrowserRouter([
       { path: "reports", Component: Reports },
     ],
   },
+
+  {
+    path:"login",
+    Component:LoginLayout,
+    children:[
+      {index:true, Component:Login}
+    ]
+  }
 ]);
