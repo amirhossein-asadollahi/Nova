@@ -1,15 +1,11 @@
 import React from "react";
 
-const Badge = ({ value, bgColor, position,badgeType }) => {
+const Badge = ({ value, badgeType, className }) => {
   return (
     <div
-      className={`${position} min-w-5 h-5 flex items-center justify-center px-2 rounded-4xl ${bgColor} text-white`}
+      className={`${className} min-w-5 h-5 flex items-center justify-center px-2 rounded-4xl `}
     >
-      <span>
-        {
-          badgeType === "off" ? `% ${value}` : value
-        }
-      </span>
+      <span>{badgeType === "off" ? `% ${value}` : value}</span>
     </div>
   );
 };

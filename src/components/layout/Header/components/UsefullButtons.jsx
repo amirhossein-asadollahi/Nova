@@ -11,8 +11,7 @@ const UsefullButtons = () => {
       <div className="relative">
         <Badge
           value={2}
-          bgColor={"bg-primary"}
-          position={"absolute -top-1.5 left-5"}
+          className={"bg-primary absolute -top-1.5 left-5 text-white"}
         />
         <ShoppingCart
           onClick={() => navigate("/cart")}
@@ -22,8 +21,7 @@ const UsefullButtons = () => {
       <div className="relative">
         <Badge
           value={2}
-          bgColor={"bg-primary"}
-          position={"absolute -top-1.5 left-5"}
+          className={"bg-primary absolute -top-1.5 left-5 text-white"}
         />
         <Heart
           className="w-8 h-8 hover:text-primary cursor-pointer"

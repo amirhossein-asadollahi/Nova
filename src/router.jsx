@@ -26,6 +26,7 @@ import DashboardComments from "./pages/Admin/pages/Comments/DashboardComments";
 import Reports from "./pages/Admin/pages/Reports/Reports";
 import LoginLayout from "./Layouts/LoginLayout";
 import Login from "./pages/Login/Login";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,7 @@ export const router = createBrowserRouter([
       { path: "order-success", Component: OrderSuccess },
       { path: "order-detail", Component: OrderDetail },
       { path: "wishlist", Component: WishList },
+      { path: "about-us", Component: AboutUs },
       { path: "*", Component: NotFound },
     ],
   },
@@ -65,10 +67,8 @@ export const router = createBrowserRouter([
   },
 
   {
-    path:"login",
-    Component:LoginLayout,
-    children:[
-      {index:true, Component:Login}
-    ]
-  }
+    path: "login",
+    Component: LoginLayout,
+    children: [{ index: true, Component: Login }],
+  },
 ]);

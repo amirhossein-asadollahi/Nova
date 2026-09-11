@@ -6,12 +6,16 @@ const ProductCard = ({ img, title, rate, price, off, image }) => {
   const calculateOff = Number(price) - Number(price) * (Number(off) / 100);
   return (
     <>
-      <div className="w-56 bg-bg-secondary border-2 border-border rounded-2xl p-4 overflow-hidden flex flex-col group hover:-translate-y-2 hover:border-primary transition-all duration-300">
+      <div className="w-56 h-84 bg-white border-2 border-border rounded-2xl p-4 overflow-hidden flex flex-col group hover:-translate-y-2 hover:border-primary transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             {off ? (
               <span>
-                <Badge value={off} bgColor={"bg-red-500"} badgeType={"off"} />
+                <Badge
+                  value={off}
+                  className={"bg-red-500 text-white"}
+                  badgeType={"off"}
+                />
               </span>
             ) : null}
           </div>
@@ -33,9 +37,9 @@ const ProductCard = ({ img, title, rate, price, off, image }) => {
             {rate}
           </span>
           <div className="mt-2 flex items-center justify-between">
-            <span className="size-10 flex items-center justify-center bg-primary-200 rounded-xl cursor-pointer hover:bg-primary-100">
+            {/* <span className="size-10 flex items-center justify-center bg-primary-200 rounded-xl cursor-pointer hover:bg-primary-100">
               <ShoppingCart size={18} className="text-primary" />
-            </span>
+            </span> */}
             {off ? (
               <>
                 <div className="flex flex-col items-center">

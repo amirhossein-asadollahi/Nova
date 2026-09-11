@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const CategoryCard = ({ image, title, count }) => {
   return (
-    <div className="w-56 bg-bg-secondary border-2 border-border rounded-2xl p-4 overflow-hidden flex flex-col items-center group hover:-translate-y-2 hover:border-primary transition-all duration-300">
+    <div className="w-56 bg-white border-2 border-border rounded-2xl p-4 overflow-hidden flex flex-col items-center group hover:-translate-y-2 hover:border-primary transition-all duration-300">
       <div className="w-full h-full">
         <img
           className="w-full h-full object-cover rounded-2xl"

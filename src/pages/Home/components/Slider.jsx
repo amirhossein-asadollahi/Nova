@@ -24,8 +24,7 @@ const Slider = () => {
         <SwiperSlide className="relative">
           <Badge
             value={"فروش ویژه"}
-            bgColor={"bg-primary"}
-            position={"absolute top-8 right-20"}
+            className={"bg-primary absolute top-8 right-20 text-white"}
           />
           <img
             className="w-full h-full object-cover"
@@ -41,8 +40,7 @@ const Slider = () => {
         <SwiperSlide className="relative">
           <Badge
             value={"تخفیف ویژه"}
-            bgColor={"bg-primary"}
-            position={"absolute top-8 right-20"}
+            className={"bg-primary absolute top-8 right-20 text-white"}
           />
           <img
             className="w-full h-full object-cover"
@@ -58,8 +56,7 @@ const Slider = () => {
         <SwiperSlide className="relative">
           <Badge
             value={"پر طرفدار"}
-            bgColor={"bg-primary"}
-            position={"absolute top-8 right-20"}
+            className={"bg-primary absolute top-8 right-20 text-white"}
           />
           <img
             className="w-full h-full object-cover"
