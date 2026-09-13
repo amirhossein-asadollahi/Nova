@@ -27,6 +27,14 @@ import Reports from "./pages/Admin/pages/Reports/Reports";
 import LoginLayout from "./Layouts/LoginLayout";
 import Login from "./pages/Login/Login";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import ProfileLayout from "./Layouts/ProfileLayout";
+import Profile from "./pages/UserProfile/pages/Profile/Profile";
+import MyOrders from "./pages/UserProfile/pages/MyOrders/MyOrders";
+import MyAddresses from "./pages/UserProfile/pages/MyAddresses/MyAddresses";
+import AccountDetail from "./pages/UserProfile/pages/AccountDetail/AccountDetail";
+import MyComments from "./pages/UserProfile/pages/MyComments/MyComments";
+import ProfileSettings from "./pages/UserProfile/pages/ProfileSettings/ProfileSettings";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +53,7 @@ export const router = createBrowserRouter([
       { path: "order-detail", Component: OrderDetail },
       { path: "wishlist", Component: WishList },
       { path: "about-us", Component: AboutUs },
-      { path: "*", Component: NotFound },
+      { path: "contact-us", Component: ContactUs },
     ],
   },
   {
@@ -65,10 +73,25 @@ export const router = createBrowserRouter([
       { path: "reports", Component: Reports },
     ],
   },
-
+  {
+    path: "profile",
+    Component: ProfileLayout,
+    children: [
+      { index: true, Component: Profile },
+      { path: "my-orders", Component: MyOrders },
+      { path: "my-addresses", Component: MyAddresses },
+      { path: "account-detail", Component: AccountDetail },
+      { path: "my-comments", Component: MyComments },
+      { path: "settings", Component: ProfileSettings },
+    ],
+  },
   {
     path: "login",
     Component: LoginLayout,
     children: [{ index: true, Component: Login }],
+  },
+  {
+    path: "*",
+    Component: NotFound,
   },
 ]);

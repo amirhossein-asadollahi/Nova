@@ -2,13 +2,14 @@ import React from "react";
 import { Outlet } from "react-router";
 import { Toaster } from "sonner";
 
-const LoginLayout = () => {
+const ProfileLayout = () => {
   return (
-    <div>
+    <>
       <Toaster position="top-center" />
+      {/* <ProfileSidebar /> */}
       <Outlet />
-    </div>
+    </>
   );
 };
 
-export default LoginLayout;
+export default ProfileLayout;
